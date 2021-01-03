@@ -20,7 +20,7 @@ inputDom.addEventListener('input', (e) => {
                         )
                         .then(res => {
                             //    If the user changed the input before getting a response
-                            if (res.data === e.target.value) {
+                            if (res.data === e.target.value && res.data!="") {
                                 messageDom.innerHTML = res.data + ' is available';
                             }
                         })
